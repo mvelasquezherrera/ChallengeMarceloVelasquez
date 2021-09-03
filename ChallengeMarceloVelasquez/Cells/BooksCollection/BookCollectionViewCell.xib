@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="ChallengeMarceloVelasquez" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RS-5y-KII">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKa-9n-ehS">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-ow-zOI">
+                                <rect key="frame" x="16" y="166" width="168" height="118"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sll-XN-hyb">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="97"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="0.0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9n-IO-qK0">
+                                        <rect key="frame" x="0.0" y="97" width="168" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TaO-ow-zOI" secondAttribute="trailing" constant="16" id="3WJ-fK-Q8t"/>
+                            <constraint firstItem="TaO-ow-zOI" firstAttribute="top" secondItem="SKa-9n-ehS" secondAttribute="bottom" constant="16" id="3nv-PN-3ak"/>
+                            <constraint firstAttribute="trailing" secondItem="SKa-9n-ehS" secondAttribute="trailing" id="4n6-IA-TYc"/>
+                            <constraint firstItem="SKa-9n-ehS" firstAttribute="leading" secondItem="1RS-5y-KII" secondAttribute="leading" id="8QO-BJ-xMb"/>
+                            <constraint firstItem="SKa-9n-ehS" firstAttribute="top" secondItem="1RS-5y-KII" secondAttribute="top" id="U0K-AP-T4y"/>
+                            <constraint firstItem="TaO-ow-zOI" firstAttribute="leading" secondItem="1RS-5y-KII" secondAttribute="leading" constant="16" id="evq-mp-efP"/>
+                            <constraint firstItem="SKa-9n-ehS" firstAttribute="height" secondItem="1RS-5y-KII" secondAttribute="height" multiplier="0.5" id="qjI-Zp-Le7"/>
+                            <constraint firstAttribute="bottom" secondItem="TaO-ow-zOI" secondAttribute="bottom" constant="16" id="xBk-Le-5IL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1RS-5y-KII" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FLK-zs-h5x"/>
+                <constraint firstItem="1RS-5y-KII" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GlQ-hh-iYV"/>
+                <constraint firstAttribute="trailing" secondItem="1RS-5y-KII" secondAttribute="trailing" id="SgF-JC-mfI"/>
+                <constraint firstAttribute="bottom" secondItem="1RS-5y-KII" secondAttribute="bottom" id="mTb-55-efI"/>
+            </constraints>
+            <size key="customSize" width="273" height="229"/>
+            <connections>
+                <outlet property="cardBook" destination="1RS-5y-KII" id="2jk-x0-uCg"/>
+                <outlet property="imgBook" destination="SKa-9n-ehS" id="82m-0H-ROI"/>
+                <outlet property="lblBookAuthor" destination="R9n-IO-qK0" id="S3S-e0-fGf"/>
+                <outlet property="lblBookName" destination="Sll-XN-hyb" id="X53-gb-ddC"/>
+            </connections>
+            <point key="canvasLocation" x="290.57971014492756" y="153.68303571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -35,10 +35,6 @@ class BooksViewController: UIViewController {
     }
     
     func configureNavigation() {
-//        self.navigationController?.navigationBar.backgroundColor = .clear
-//        self.navigationController?.view.backgroundColor = .clear
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        self.navigationController?.view.backgroundColor = .clear
         title = "Books"
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.font : UIFont(name: "Futura-Bold", size: 16)!,
@@ -128,6 +124,10 @@ class BooksViewController: UIViewController {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350

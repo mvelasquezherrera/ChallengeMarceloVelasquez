@@ -16,6 +16,7 @@
 		2F2F5A3626E2CB67004C9179 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F2F5A3526E2CB67004C9179 /* SDWebImage */; };
 		2F2F5A3F26E2CBFB004C9179 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F5A3E26E2CBFB004C9179 /* ColorPalette.swift */; };
 		2F2F5A4126E2CC6D004C9179 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F5A4026E2CC6D004C9179 /* Books.swift */; };
+		2F2F5A4326E2CCFF004C9179 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F5A4226E2CCFF004C9179 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2F2F5A2E26E2C91D004C9179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F2F5A3E26E2CBFB004C9179 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		2F2F5A4026E2CC6D004C9179 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		2F2F5A4226E2CCFF004C9179 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		2F2F5A3D26E2CBD7004C9179 /* API Service */ = {
 			isa = PBXGroup;
 			children = (
+				2F2F5A4226E2CCFF004C9179 /* APIService.swift */,
 			);
 			path = "API Service";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				2F2F5A2126E2C91C004C9179 /* AppDelegate.swift in Sources */,
 				2F2F5A2326E2C91C004C9179 /* SceneDelegate.swift in Sources */,
 				2F2F5A3F26E2CBFB004C9179 /* ColorPalette.swift in Sources */,
+				2F2F5A4326E2CCFF004C9179 /* APIService.swift in Sources */,
 				2F2F5A4126E2CC6D004C9179 /* Books.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

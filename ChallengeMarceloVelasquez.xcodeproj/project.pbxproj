@@ -14,6 +14,8 @@
 		2F2F5A2A26E2C91D004C9179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F5A2926E2C91D004C9179 /* Assets.xcassets */; };
 		2F2F5A2D26E2C91D004C9179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F5A2B26E2C91D004C9179 /* LaunchScreen.storyboard */; };
 		2F2F5A3626E2CB67004C9179 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F2F5A3526E2CB67004C9179 /* SDWebImage */; };
+		2F2F5A3F26E2CBFB004C9179 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F5A3E26E2CBFB004C9179 /* ColorPalette.swift */; };
+		2F2F5A4126E2CC6D004C9179 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F5A4026E2CC6D004C9179 /* Books.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2F2F5A2926E2C91D004C9179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F2F5A2C26E2C91D004C9179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F2F5A2E26E2C91D004C9179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F2F5A3E26E2CBFB004C9179 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		2F2F5A4026E2CC6D004C9179 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,73 @@
 		2F2F5A1F26E2C91C004C9179 /* ChallengeMarceloVelasquez */ = {
 			isa = PBXGroup;
 			children = (
-				2F2F5A2026E2C91C004C9179 /* AppDelegate.swift */,
-				2F2F5A2226E2C91C004C9179 /* SceneDelegate.swift */,
-				2F2F5A2426E2C91C004C9179 /* ViewController.swift */,
+				2F2F5A3D26E2CBD7004C9179 /* API Service */,
+				2F2F5A3C26E2CBD2004C9179 /* ViewModels */,
+				2F2F5A3B26E2CBCC004C9179 /* Models */,
+				2F2F5A3A26E2CBC3004C9179 /* Commom */,
+				2F2F5A3926E2CBBF004C9179 /* Controllers */,
+				2F2F5A3826E2CBB4004C9179 /* Cells */,
+				2F2F5A3726E2CBB0004C9179 /* Support */,
 				2F2F5A2626E2C91C004C9179 /* Main.storyboard */,
 				2F2F5A2926E2C91D004C9179 /* Assets.xcassets */,
 				2F2F5A2B26E2C91D004C9179 /* LaunchScreen.storyboard */,
 				2F2F5A2E26E2C91D004C9179 /* Info.plist */,
 			);
 			path = ChallengeMarceloVelasquez;
+			sourceTree = "<group>";
+		};
+		2F2F5A3726E2CBB0004C9179 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F5A3E26E2CBFB004C9179 /* ColorPalette.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2F2F5A3826E2CBB4004C9179 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2F2F5A3926E2CBBF004C9179 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F5A2426E2C91C004C9179 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F2F5A3A26E2CBC3004C9179 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F5A2026E2C91C004C9179 /* AppDelegate.swift */,
+				2F2F5A2226E2C91C004C9179 /* SceneDelegate.swift */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		2F2F5A3B26E2CBCC004C9179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F5A4026E2CC6D004C9179 /* Books.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F2F5A3C26E2CBD2004C9179 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2F2F5A3D26E2CBD7004C9179 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +210,8 @@
 				2F2F5A2526E2C91C004C9179 /* ViewController.swift in Sources */,
 				2F2F5A2126E2C91C004C9179 /* AppDelegate.swift in Sources */,
 				2F2F5A2326E2C91C004C9179 /* SceneDelegate.swift in Sources */,
+				2F2F5A3F26E2CBFB004C9179 /* ColorPalette.swift in Sources */,
+				2F2F5A4126E2CC6D004C9179 /* Books.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
